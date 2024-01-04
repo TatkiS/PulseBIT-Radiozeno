@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseBIT Radio</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Темний фон для кращої видимості білого тексту */
+    color: white; /* Білий текст */
+  }
+  header {
+    background-color: #0057b8; /* Темно-синій для верхньої шапки */
+    color: #fff;
+    padding: 30px 0; /* Збільшено верхню шапку */
+    text-align: center;
+  }
+  header h1 {
+    animation: colorChange 10s infinite;
+  }
+  @keyframes colorChange {
+    0% { color: #ff2d55; }
+    50% { color: #ffffff; }
+    100% { color: #4cd964; }
+  }
+  nav ul {
+    padding: 0;
+    list-style: none;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  main {
+    padding: 15px;
+  }
+  footer {
+    background-color: #002f6c; /* Темно-синій для нижньої шапки */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Збільшено нижню шапку */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .player-container {
+    text-align: center; /* Центрування плеєра */
+  }
+  iframe {
+    max-width: 300px; /* Фіксована максимальна ширина */
+    width: 100%; /* Адаптивність */
+    margin: 20px auto; /* Додано відступи зверху та знизу */
+  }
+  /* Адаптація під мобільні пристрої */
+  @media screen and (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin: 10px 0; /* Додано відступи для мобільних пристроїв */
+      text-align: center;
+    }
+    .player-container iframe {
+      max-width: 100%; /* Адаптивна ширина для мобільних пристроїв */
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+<h1>PulseBIT Radio</h1>
+<nav>
+<ul>
+
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="about">
+<h2>Про нас</h2>
+<p>PulseBIT - це радіостанція, що пульсує на хвилі сучасної електронної музики. Вона поєднує в собі динаміку та інновації, пропонуючи слухачам унікальний музичний досвід з акцентом на електронну та клубну музику.</p>
+</section>
+
+<section id="schedule">
+<h2>Розклад</h2>
+<p>Наша радіостанція працює круглосуточно, безперервно відтворюючи найсвіжіші треки та вічні хіти від відомих та нових артистів з усього світу.</p>
+</section>
+
+<section id="player">
+<h2>Прямий ефір</h2>
+<div class="player-container">
+  <iframe src="https://zeno.fm/player/pulsebit-radio" width="575" height="250" frameborder="0" scrolling="no"></iframe>
+</div>
+</section>
+
+<section id="contact">
+<h2>Контакти</h2>
+<p>Для зв'язку з нами використовуйте електронну пошту: <a href="mailto:wavevictory@protonmail.com">wavevictory@protonmail.com</a></p>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2024 PulseBIT Radio</p>
+</footer>
+</body>
+</html>
